@@ -1,10 +1,24 @@
+:root {
+  --primary-colour: #90818f;
+  --secondary-colour: #faf7f5;
+  --tertiary-colour: #c4b0b0;
+  --heading-font-family: "Noto Serif Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+  --default-font-color: #010101;
+}
+
+body {
+  font-family: var(--default-font-family);
+  color: var(--default-font-color);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif Display", serif;
+  font-family: var(--heading-font-family);
 }
 
 h2 {
@@ -22,18 +36,18 @@ p {
 }
 
 .hero {
-  background-color: #f2eada;
+  background-color: var(--secondary-colour);
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero h1 {
-  color: #454839;
+  color: var(--primary-colour);
   font-size: 96px;
 }
 
 .hero h2 {
-  color: #454839;
+  color: var(--primary-colour);
   font-weight: normal;
   line-height: 2;
   font-size: 24px;
@@ -44,12 +58,12 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #454839;
+  color: var(--primary-colour);
 }
 
 .btn-branding {
-  background-color: #857000;
-  color: #f2eada;
+  background-color: var(--tertiary-colour);
+  color: #fff;
   border-radius: 3px;
   font-size: 18px;
   line-height: 27px;
@@ -57,9 +71,9 @@ p {
 }
 
 .btn-branding:hover {
-  background-color: #f2eada;
-  color: #857000;
-  border: 1px solid #857000;
+  background-color: #fff;
+  color: var(--tertiary-colour);
+  border: 1px solid var(--tertiary-colour);
 }
 
 .grid-container {
@@ -78,17 +92,17 @@ p {
 }
 
 .grid-portfolio:hover {
-  background-color: #454839;
+  background-color: var(--secondary-colour);
   border-radius: 10px;
 }
 
 .grid-portfolio:hover .grid-portfolio-image {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .grid-portfolio:hover .grid-portfolio-content {
   opacity: 1;
-  color: #f2eada;
+  /*color: #fff;*/
 }
 .grid-portfolio-image {
   opacity: 1;
@@ -107,12 +121,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 1px 0px 6px black;
+  /*text-shadow: 1px 0px 6px var(--primary-colour);*/
 }
 
 .btn-grid {
-  background-color: #857000;
-  color: #f2eada;
+  background-color: var(--tertiary-colour);
+  color: #fff;
   border-radius: 3px;
   font-size: 12px;
   line-height: 27px;
@@ -121,9 +135,9 @@ p {
 }
 
 .btn-grid:hover {
-  background-color: #f2eada;
-  color: #857000;
-  border: 1px solid #857000;
+  background-color: #fff;
+  color: var(--tertiary-colour);
+  border: 1px solid var(--tertiary-colour);
 }
 
 .grid-cta {
@@ -135,24 +149,24 @@ p {
   text-align: center;
   font-size: 12px;
   margin: 0 auto;
-  color: #857000;
+  color: var(--tertiary-colour);
   font-weight: 500;
 }
 
 .btn-cta:hover {
-  color: #454839;
+  color: var(--primary-colour);
 }
 
 .contact-container {
-  background-color: #f2eada;
+  background-color: var(--secondary-colour);
   display: flex;
   justify-content: space-between;
   margin: 50px 100px;
   align-items: center;
   padding: 20px 50px;
+  border-radius: 3px;
 }
 
 .contact-container p {
   opacity: 0.5;
-  border-radius: 3px;
 }
