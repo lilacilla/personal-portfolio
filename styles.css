@@ -35,7 +35,8 @@ p {
   text-wrap: balance;
 }
 
-.hero {
+.hero,
+.about-hero-container {
   background-color: var(--secondary-colour);
   text-align: center;
   padding: 80px 20px;
@@ -56,12 +57,12 @@ p {
 
 .hero p {
   font-size: 36px;
-  font-weight: bold;
   margin: 0;
   color: var(--primary-colour);
+  opacity: 0.5;
 }
 
-.btn-branding {
+.btn-hero-branding {
   background-color: var(--tertiary-colour);
   color: #fff;
   border-radius: 3px;
@@ -70,7 +71,7 @@ p {
   padding: 15px 30px;
 }
 
-.btn-branding:hover {
+.btn-hero-branding:hover {
   background-color: #fff;
   color: var(--tertiary-colour);
   border: 1px solid var(--tertiary-colour);
@@ -169,4 +170,102 @@ p {
 
 .contact-container p {
   opacity: 0.5;
+}
+
+.about-hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-header-content h1 {
+  font-size: 50px;
+}
+
+.about-header-content h2 {
+  opacity: 0.5;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: var(--default-font-family);
+}
+
+.about-header-content {
+  /*transform: translate(20%, 0);*/
+  margin-top: 45px;
+}
+
+.about-header-summary {
+  font-size: 12px;
+  padding: 0 110px;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.about-image {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0;
+  transform: translate(-31%, 0);
+}
+
+.white-space {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.white-space p {
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 0.5px;
+  display: none;
+}
+
+.about-social-links {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--primary-colour);
+}
+
+.about-social-links a {
+  color: var(--primary-colour);
+}
+
+.about-skills-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tag-list-container {
+  margin: 0 auto;
+}
+
+.skills-tag {
+  background-color: var(--primary-colour);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 27px;
+  padding: 2px 10px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-secondary {
+  background-color: var(--tertiary-colour);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 27px;
+  padding: 2px 10px;
+  text-align: center;
 }
