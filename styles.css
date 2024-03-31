@@ -35,8 +35,13 @@ p {
   text-wrap: balance;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hero,
-.about-hero-container {
+.about-hero-container,
+.secondary-hero {
   background-color: var(--secondary-colour);
   text-align: center;
   padding: 80px 20px;
@@ -248,7 +253,7 @@ p {
   margin: 0 auto;
 }
 
-.skills-tag {
+.tag {
   background-color: var(--primary-colour);
   color: #fff;
   border-radius: 3px;
@@ -268,4 +273,121 @@ p {
   line-height: 27px;
   padding: 2px 10px;
   text-align: center;
+}
+
+.portfolio-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-portfolio-title {
+  font-family: var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-short-description {
+  font-family: var(--default-font-family);
+  margin-top: -20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  font-weight: 200;
+  text-align: center;
+  font-size: 12px;
+}
+.portfolio-tags {
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+
+.project-tags,
+.project-promo-tags {
+  background-color: #ea9a9b;
+  color: #010101;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 27px;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-promo-tags {
+  color: #010101;
+}
+
+.project-promo-tags a,
+.project-promo-tags-two a,
+.project-promo-tags-three a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.project-promo-tags:hover {
+  color: #ea9a9b;
+  background-color: #fff;
+  border: solid 1px #ea9a9b;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 27px;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-promo-tags-two,
+.project-tags-two {
+  background-color: #ffb089;
+  color: #010101;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 27px;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-promo-tags-two:hover {
+  color: #ffb089;
+  background-color: #fff;
+  border: solid 1px #ffb089;
+}
+
+.project-promo-tags-three,
+.project-tags-three {
+  background-color: #ffd075;
+  color: #010101;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 27px;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-promo-tags-three:hover {
+  color: #ffd075;
+  background-color: #fff;
+  border: solid 1px #ffd075;
 }
