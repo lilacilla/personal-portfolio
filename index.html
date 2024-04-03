@@ -28,18 +28,46 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center">
+        <a href="/">
+          <img src="images/name-logo.jpg" class="logo d-md-block" alt="Logo" />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/" title="Homepage">Home</a>
+          </li>
+
+          <li>
+            <a href="/about.html" title="About Page">About</a>
+          </li>
+
+          <li>
+            <a href="/portfolio.html" title="Portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="/contact.html" title="Contact Priscilla">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="hero">
       <p>Hi, I am</p>
       <h1>Priscilla</h1>
       <h2 class="mb-3">Front-end Developer in the UK</h2>
       <div>
-        <a href="" class="btn btn-hero-branding">View My Portfolio</a>
+        <a href="/portfolio.html" class="btn btn-hero-branding"
+          >View My Portfolio</a
+        >
       </div>
     </div>
 
-    <p class="container text-center mt-5 text-muted">
-      Here are some of the projects I have tackled since diving into the
-      SheCodes courses. Let's dive in and explore the journey together.
+    <p class="container text-container text-center mt-5 text-muted">
+      This website serves as a platform to demonstrate my skills, featuring
+      projects from SheCodes alongside real-world case studies. It was an
+      developed as part of my course.
     </p>
 
     <div class="grid-container">
@@ -48,7 +76,9 @@
         <div class="grid-portfolio-content">
           <h2 class="grid-portfolio-title">Clock App</h2>
           <p>Built with HTML, CSS & Javascript</p>
-          <a href="#" class="btn btn-grid">Learn More</a>
+          <a href="/portfolio.html#course-project" class="btn btn-grid"
+            >Learn More</a
+          >
         </div>
       </div>
 
@@ -57,7 +87,9 @@
         <div class="grid-portfolio-content">
           <h2 class="grid-portfolio-title">Weather App</h2>
           <p>Built with HTML, CSS & Javascript</p>
-          <a href="#" class="btn btn-grid">Learn More</a>
+          <a href="/portfolio.html#course-project" class="btn btn-grid"
+            >Learn More</a
+          >
         </div>
       </div>
 
@@ -70,19 +102,22 @@
         <div class="grid-portfolio-content">
           <h2 class="grid-portfolio-title">Landing Page</h2>
           <p>Built with HTML, CSS & Javascript</p>
-          <a href="#" class="btn btn-grid">Learn More</a>
+          <a href="/portfolio.html#course-project" class="btn btn-grid"
+            >Learn More</a
+          >
         </div>
       </div>
     </div>
 
     <div class="grid-cta">
-      <a href="#" class="btn btn-cta">View More &rarr;</a>
+      <a href="/portfolio.html" class="btn btn-cta">View More &rarr;</a>
     </div>
 
-    <p class="container text-center mt-4 text-muted">
-      These projects have been incredible learning experiences, and I'm eager to
-      continue growing and exploring new horizons. If you'd like more details or
-      have any questions, feel free to ask! Let's keep the conversation going.
+    <p class="container text-container text-center mt-4 text-muted">
+      These projects have been invaluable learning experiences for me, and I'm
+      excited to keep expanding my skills and exploring new opportunities. If
+      you have any questions or need more details, please don't hesitate to
+      reach out. Let's keep the conversation flowing!
     </p>
 
     <div class="contact-container">
@@ -91,8 +126,36 @@
         <p>Let's work together</p>
       </div>
       <div>
-        <a href="#" class="btn btn-hero-branding">Get In Touch</a>
+        <a href="mailto:uslinldn@gmail.com" class="btn btn-hero-branding"
+          >Get In Touch</a
+        >
       </div>
     </div>
+
+    <footer>
+      <div class="footer-socials d-flex mt-3 mb-4">
+        <a
+          href="https://www.linkedin.com/in/priscilla-n-aa472a142/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/lilacilla" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:uslinldn@gmail.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+      <p class="sign-off text-center opacity-75">
+        This project was coded by <strong>Priscilla</strong> and open sourced on
+        <a
+          href="https://github.com/lilacilla/personal-portfolio"
+          target="_blank"
+          title="Github project"
+          ><strong>Github</strong></a
+        >
+      </p>
+    </footer>
   </body>
 </html>

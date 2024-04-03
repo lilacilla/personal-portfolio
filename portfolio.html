@@ -29,21 +29,46 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center">
+        <a href="/">
+          <img src="images/name-logo.jpg" class="logo d-md-block" alt="Logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+
+          <li>
+            <a href="/about.html" title="About Page">About</a>
+          </li>
+
+          <li class="active">
+            <a href="/portfolio.html" title="Portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="/contact.html" title="Contact Priscilla">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="secondary-hero">
       <h1>Latest Projects</h1>
-      <p>Here are some of my latest projects</p>
-      <div>
-        <a href="#courseProject" class="btn btn-grid">Course Projects</a>
-        <a href="#" class="btn btn-grid">Real Life Projects</a>
+      <p>Take a look at some of my recent projects</p>
+      <div class="btn-multi">
+        <a href="#course-project" class="btn btn-grid">Course Projects</a>
+        <a href="#real-project" class="btn btn-grid">Real Case Projects</a>
       </div>
     </div>
 
-    <div id="courseProject">
+    <div id="course-project">
       <h2 class="project-portfolio-title text-center mt-5 mb-2">
         Course Projects
       </h2>
-      <p class="project-description mb-5">
-        The following examples are projects that I have worked on for my course
+      <p class="project-description mb-4">
+        I'd love to share some of the cool projects I've worked on for my course
         on SheCodes.
       </p>
     </div>
@@ -52,7 +77,7 @@
         <div class="portfolio-info">
           <h2 class="project-portfolio-title">Clock App</h2>
           <ul class="portfolio-links">
-            <li class="me-2 project-promo-tags">
+            <li class="me-2 project-promo-tags btn">
               <a
                 href="https://github.com/lilacilla/world-clock"
                 class="img-fluid"
@@ -61,7 +86,7 @@
                 <i class="fa-solid fa-code"></i
               ></a>
             </li>
-            <li class="project-promo-tags">
+            <li class="project-promo-tags btn">
               <a
                 href="https://mellifluous-fudge-7a7513.netlify.app/"
                 target="_blank"
@@ -70,7 +95,9 @@
             </li>
           </ul>
         </div>
-        <h4 class="project-short-description text-muted">Live Data App</h4>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Live Data App
+        </h4>
         <ul class="portfolio-tags text-center">
           <li class="project-tags"><i class="fa-brands fa-html5"></i> HTML</li>
           <li class="project-tags">
@@ -84,8 +111,8 @@
           </li>
         </ul>
         <p class="project-description">
-          A fully functionally World Clock where users can also type in a
-          location and get a time.
+          This clock app offers users the ability to view the times of
+          predetermined countries using live data with precision and ease.
         </p>
         <img src="images/clock-app.png" alt="" class="grid-portfolio-image" />
       </div>
@@ -95,7 +122,7 @@
         <div class="portfolio-info">
           <h2 class="project-portfolio-title">Weather App</h2>
           <ul class="portfolio-links">
-            <li class="me-2 project-promo-tags-two">
+            <li class="me-2 project-promo-tags-six btn">
               <a
                 href="https://github.com/lilacilla/final-plus-project-weather-app"
                 class="img-fluid"
@@ -104,7 +131,7 @@
                 <i class="fa-solid fa-code"></i
               ></a>
             </li>
-            <li class="project-promo-tags-two">
+            <li class="project-promo-tags-six btn">
               <a
                 href="https://resilient-dango-8615ad.netlify.app/"
                 target="_blank"
@@ -113,24 +140,26 @@
             </li>
           </ul>
         </div>
-        <h4 class="project-short-description text-muted">Live Data App</h4>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Live Data App
+        </h4>
         <ul class="portfolio-tags text-center">
-          <li class="project-tags-two">
+          <li class="project-tags-six">
             <i class="fa-brands fa-html5"></i> HTML
           </li>
-          <li class="project-tags-two">
+          <li class="project-tags-six">
             <i class="fa-brands fa-css3-alt"></i> CSS
           </li>
-          <li class="project-tags-two">
+          <li class="project-tags-six">
             <i class="fa-brands fa-js"></i> Javascript
           </li>
-          <li class="project-tags-two">
+          <li class="project-tags-six">
             <i class="fa-solid fa-code-compare"></i> API
           </li>
         </ul>
         <p class="project-description">
-          A fully functionally World Clock where users can also type in a
-          location and get a time.
+          A fully functional weather app! Users can either search for a city or
+          access their current location's weather with ease. Give it a try!
         </p>
         <img src="images/weather-app.png" alt="" class="grid-portfolio-image" />
       </div>
@@ -140,16 +169,10 @@
         <div class="portfolio-info">
           <h2 class="project-portfolio-title">Landing Page</h2>
           <ul class="portfolio-links">
-            <li class="me-2 project-promo-tags-three">
-              <a
-                href="https://github.com/lilacilla/world-clock"
-                class="img-fluid"
-                target="_blank"
-              >
-                <i class="fa-solid fa-code"></i
-              ></a>
+            <li class="me-2 project-promo-tags-three btn" id="code-four-click">
+              <i class="fa-solid fa-code"></i>
             </li>
-            <li class="project-promo-tags-three">
+            <li class="project-promo-tags-three btn">
               <a
                 href="https://www.shecodes.io/cohorts/shecodes-basics-add-on-8cd886d7-f633-465c-931c-39c845b5dad8/projects/1862576?_gl=1*12zc9nh*_gcl_au*MTQ4ODUwNzI0MC4xNzEwODg3MzI4"
                 target="_blank"
@@ -158,7 +181,9 @@
             </li>
           </ul>
         </div>
-        <h4 class="project-short-description text-muted">Live Data App</h4>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Landing Page
+        </h4>
         <ul class="portfolio-tags text-center">
           <li class="project-tags-three">
             <i class="fa-brands fa-html5"></i> HTML
@@ -169,13 +194,10 @@
           <li class="project-tags-three">
             <i class="fa-brands fa-js"></i> Javascript
           </li>
-          <li class="project-tags-three">
-            <i class="fa-solid fa-code-compare"></i> API
-          </li>
         </ul>
         <p class="project-description">
-          A fully functionally World Clock where users can also type in a
-          location and get a time.
+          This landing page demonstrates the feature to toggle between light and
+          dark themes.
         </p>
         <img
           src="images/landing-page-dark-theme.png"
@@ -184,5 +206,694 @@
         />
       </div>
     </div>
+
+    <!--Real Case Projects-->
+    <div id="real-project">
+      <h2 class="project-portfolio-title text-center mt-5 mb-2">
+        Real Case Projects
+      </h2>
+      <p class="project-description text-container mb-5">
+        I've had the opportunity to work on some fantastic projects where I took
+        the lead in designing pages and then translating them into reality using
+        HTML & CSS. <br />Let me give you a peek at the work I've created:
+      </p>
+    </div>
+
+    <div class="grid-case-container mt-4 mb-5">
+      <div class="project-portfolio card p-2">
+        <div class="portfolio-info">
+          <h2 class="project-portfolio-title">404 Page</h2>
+          <ul class="portfolio-links">
+            <li class="me-2 project-promo-tags-two btn" id="code-one-click">
+              <i class="fa-solid fa-code"></i>
+            </li>
+            <li class="project-promo-tags-two btn" id="alt-view-one-click">
+              <i class="fa-solid fa-mobile-screen-button"></i> /
+              <i class="fa-solid fa-desktop"></i>
+            </li>
+          </ul>
+        </div>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Landing Page
+        </h4>
+        <ul class="portfolio-tags text-center">
+          <li class="project-tags-two">
+            <i class="fa-brands fa-html5"></i> HTML
+          </li>
+          <li class="project-tags-two">
+            <i class="fa-brands fa-css3-alt"></i> CSS
+          </li>
+          <li class="project-tags-two">
+            <i class="fa-solid fa-palette"></i> UX
+          </li>
+        </ul>
+        <p class="project-description">
+          I had the chance to redesign the 404 error page, ensuring it stays
+          true to the brand aesthetics and enhances the user journey.
+          <br />After finalising the design, I brought it to life using HTML &
+          CSS.
+        </p>
+        <img
+          src="images/desktop-error-page.png"
+          alt=""
+          class="grid-case-portfolio-image img-fluid portfolio-desktop-view"
+          id="case-one-desktop-img"
+        />
+
+        <img
+          src="images/mobile-error-page.png"
+          alt=""
+          class="grid-case-portfolio-image img-fluid portfolio-mobile-view d-none"
+          id="case-one-mobile-img"
+        />
+      </div>
+
+      <!--Grid 2-->
+      <div class="project-portfolio card p-2">
+        <div class="portfolio-info">
+          <h2 class="project-portfolio-title" id="vs-project-title">
+            Virtual Shopping <br />Service
+          </h2>
+          <ul class="portfolio-links">
+            <li class="me-2 project-promo-tags-four btn" id="code-two-click">
+              <i class="fa-solid fa-code"></i>
+            </li>
+            <li class="project-promo-tags-four btn" id="alt-view-two-click">
+              <i class="fa-solid fa-mobile-screen-button"></i> /
+              <i class="fa-solid fa-desktop"></i>
+            </li>
+          </ul>
+        </div>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Landing Page
+        </h4>
+        <ul class="portfolio-tags text-center">
+          <li class="project-tags-four">
+            <i class="fa-brands fa-html5"></i> HTML
+          </li>
+          <li class="project-tags-four">
+            <i class="fa-brands fa-css3-alt"></i> CSS
+          </li>
+          <li class="project-tags-four">
+            <i class="fa-solid fa-palette"></i> UX
+          </li>
+        </ul>
+        <p class="project-description">
+          I had the chance to showcase the brand's virtual shopping service by
+          crafting an online page, which I both designed and coded. <br />Let me
+          show you what I put together:
+        </p>
+        <img
+          src="images/desktop-shopping-service.png"
+          alt=""
+          class="grid-case-portfolio-image portfolio-desktop-view"
+          id="case-two-desktop-img"
+        />
+
+        <img
+          src="images/mobile-shopping-service.png"
+          alt=""
+          class="grid-case-portfolio-image img-fluid portfolio-mobile-view d-none"
+          id="case-two-mobile-img"
+        />
+      </div>
+
+      <!--Grid 3-->
+      <div class="project-portfolio card p-2">
+        <div class="portfolio-info">
+          <h2 class="project-portfolio-title">Landing Page</h2>
+          <ul class="portfolio-links">
+            <li class="me-2 project-promo-tags-five btn" id="code-three-click">
+              <i class="fa-solid fa-code"></i>
+            </li>
+            <li class="project-promo-tags-five btn" id="alt-view-three-click">
+              <i class="fa-solid fa-mobile-screen-button"></i> /
+              <i class="fa-solid fa-desktop"></i>
+            </li>
+          </ul>
+        </div>
+        <h4 class="project-short-description text-muted d-none d-md-block">
+          Landing Page
+        </h4>
+        <ul class="portfolio-tags text-center">
+          <li class="project-tags-five">
+            <i class="fa-brands fa-html5"></i> HTML
+          </li>
+          <li class="project-tags-five">
+            <i class="fa-brands fa-css3-alt"></i> CSS
+          </li>
+          <li class="project-tags-five">
+            <i class="fa-solid fa-palette"></i> UX
+          </li>
+        </ul>
+        <p class="project-description">
+          Partnering closely with the in-house design team, I had the
+          opportunity to contribute to the design process and then translate
+          their vision into code. <br />Let me show you how I brought the
+          designs to life:
+        </p>
+        <img
+          src="images/desktop-landing-page.png"
+          alt=""
+          class="grid-case-portfolio-image portfolio-desktop-view"
+          id="case-three-desktop-img"
+        />
+
+        <img
+          src="images/mobile-landing-page.png"
+          alt=""
+          class="grid-case-portfolio-image img-fluid portfolio-mobile-view d-none"
+          id="case-three-mobile-img"
+        />
+      </div>
+    </div>
+
+    <!--HTML project codes-->
+
+    <div class="project-case-codes grid-case-container">
+      <div
+        class="project-case-one project-description project-portfolio card"
+        id="case-one-code"
+      >
+        <h3 class="project-portfolio-title mt-2">HTML</h3>
+        &lt;div id="error-container"&gt;<br />
+        &lt;div id="error-image-wrapper"&gt;<br />
+        &lt;picture style="position: relative"&gt;<br />
+        &lt;source media="(min-width:658px)"
+        srcset="/desktop-client-image.jpg"&gt;<br />
+        &lt;img src="/mobile-client-image.jpg" style="width:100%;"&gt;<br />
+        &lt;/picture&gt;<br />
+        &lt;/div&gt;<br /><br /><br />
+
+        &lt;div id="error-content" class="error-content"&gt;<br />
+        &lt;h1 class="error-heading"&gt;PAGE NOT FOUND&lt;/h1&gt;<br />
+        &lt;h2 id="error-subtitle" class="error-subtext"&gt;But there's lots to
+        discover&lt;/h2&gt;<br /><br />
+
+        &lt;div id="error-links"&gt;<br />
+        &lt;a href="/new-arrivals" class="error-cta"&gt;NEW
+        ARRIVALS&lt;/a&gt;<br />
+        &lt;a href="/handbags" class="error-cta"&gt;HANDBAGS&lt;/a&gt;<br />
+        &lt;a href="/purses" class="error-cta"&gt;PURSES&lt;/a&gt;<br />
+        &lt;a href="/accessories" class="error-cta"&gt;ACCESSORIES&lt;/a&gt;<br />
+        &lt;/div&gt;<br />
+
+        &lt;br&gt;&lt;p id="error-subparagraph" class="error-subtext"
+        style="line-height: 1.5; text-wrap: balance;"&gt;Sorry, we couldn't find
+        the page you were looking for. &lt;br&gt;Please try searching for
+        something else, or browse our most popular categories
+        above.&lt;/p&gt;<br />
+        &lt;p class="error-subtext" style="line-height: 1.5; text-wrap:
+        balance;"&gt;Have a question? Our &lt;a href="/help/contact-us"
+        style="text-decoration: underline; color: #000;"&gt;customer
+        services&lt;/a&gt; team will be happy to help.&lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/div&gt;<br /><br /><br />
+
+        <h3 class="project-portfolio-title">CSS</h3>
+        @media screen and (max-width: 657px) {<br />
+        #error-container {<br />
+        min-height: 527px;<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: flex-end;<br />
+        background: #fff;<br />
+        background-position: center top;<br />
+        background-repeat: no-repeat;<br />
+        background-size: cover;<br />
+        }<br /><br />
+
+        #error-content {<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: center;<br />
+        line-height: 1.5;<br />
+        }<br /><br />
+
+        #error-content br {<br />
+        display: none;<br />
+        }<br /><br />
+
+        #error-links {<br />
+        text-align: center;<br />
+        }<br /><br />
+
+        .error-cta {<br />
+        width: 150px !important;<br />
+        display: inline-block;<br />
+        }<br /><br />
+
+        #error-subtitle {<br />
+        margin-bottom: 25px;<br />
+        }<br /><br />
+
+        #error-subparagraph {<br />
+        margin-top: 25px;<br />
+        }<br /><br />
+        }<br />
+        @media screen and (min-width: 658px) {<br />
+        #error-container {<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: flex-start;<br />
+        background-position: center top;<br />
+        background-repeat: no-repeat;<br />
+        background-size: cover;<br />
+        position: relative;<br />
+        }<br /><br />
+
+        #error-image-wrapper {<br />
+        width: 100%;<br />
+        }<br /><br />
+
+        .error-content {<br />
+        /*display: flex; flex-direction: row;*/<br />
+        width: 55%;<br />
+        text-align: center;<br />
+        display: flex;<br />
+        align-items: center;<br />
+        flex-direction: column;<br />
+        position: absolute;<br />
+        top: 50%;<br />
+        left: 25%;<br />
+        transform: translate(-50%, -50%);<br />
+        }<br /><br />
+        .error-cta {<br />
+        width: 150px !important;<br />
+        display: inline-block;<br />
+        }<br />
+        }
+      </div>
+
+      <div
+        class="project-case-two project-description project-portfolio card"
+        id="case-two-code"
+      >
+        <h3 class="project-portfolio-title mt-2">HTML</h3>
+        &lt;div id="vs-container"&gt; <br />
+
+        &lt;div id="vs-header-image-wrapper"&gt;<br />
+        &lt;picture style="position: relative"&gt;<br />
+        &lt;source media="(min-width:658px)"
+        srcset="client-desktop-image.jpg"&gt;<br />
+        &lt;img src="mobile-client-image.jpg" style="width:100%;"&gt;<br />
+        &lt;/picture&gt;<br />
+        &lt;/div&gt;<br /><br />
+
+        &lt;div id="vs-content"&gt;<br />
+
+        &lt;h1 class="virtual-heading" id="vs-title"&gt;Your Virtual
+        &lt;br&gt;Shopping Service&lt;/h1&gt;<br />
+
+        &lt;div id="vs-links"&gt;<br />
+        &lt;a href="#" target="_blank" class="virtual-cta"&gt;GET
+        SHOPPING&lt;/a&gt;<br />
+        &lt;a href="#" target="_blank" class="virtual-cta"&gt;BROWSE THE
+        CATALOGUE&lt;/a&gt;<br />
+        &lt;/div&gt;<br /><br />
+
+        &lt;p class="virtual-subtext" id="virtual-copy-one"&gt;Want to take a
+        closer look at the bag you can’t stop thinking about? Or get expert
+        advice on which style to choose?<br />
+        &lt;br&gt;&lt;br&gt;Our virtual shopping service via WhatsApp connects
+        you with our team, so you can have a chat and browse our catalogue of
+        latest styles from home.&lt;/p&gt;<br /><br />
+
+        &lt;/div&gt;<br />
+        &lt;/div&gt;<br /><br />
+
+        &lt;p class="virtual-heading"&gt;Open Monday – Friday, 9am – 6pm
+        &lt;/p&gt;<br />
+        &lt;p class="virtual-subtext"&gt;Schedule an appointment for a
+        one-to-one call or simply chat via text on WhatsApp &lt;br&gt;&nbsp;<br />
+        &nbsp;Join livestreams to be among the first to see a new collection<br />
+        &lt;br&gt;&nbsp;Browse our online catalogue&nbsp; &lt;br&gt;<br />&nbsp;Quick
+        and secure payment and shipment with Next Day Delivery&lt;/p&gt;<br /><br />
+
+        &lt;div id="vs-footer-image-wrapper"&gt;<br />
+        &lt;picture style="position: relative"&gt;<br />
+        &lt;source media="(min-width:658px)"
+        srcset="/client-desktop-image.jpg"&gt;<br />
+        &lt;img src="/mobile-client-image.jpg" style="width:100%;"&gt;<br />
+        &lt;/picture&gt;<br />
+        &lt;/div&gt;<br /><br /><br />
+
+        <h3 class="project-portfolio-title">CSS</h3>
+        @media screen and (max-width: 657px) {<br />
+
+        .virtual-heading {<br />text-transform: uppercase; font-weight: 500
+        !important; font-size: 1.3rem; letter-spacing: 3px; color: #000;
+        margin-bottom: 23px; text-align: center;}<br /><br />
+        .virtual-subtext {<br />font-weight: 500 !important; font-size: 1rem
+        !important; line-height: 1; color: #000; margin: 0.5rem auto;
+        text-align: center; line-height: 2; text-wrap: balance;}<br /><br />
+        .virtual-cta {<br />font-size: 0.75rem; color: #fff; background-color:
+        #2d2d2d; border: 2px solid #2d2d2d; /*border-radius: 32px;*/ cursor:
+        pointer; /*margin: 0.5rem 1rem;*/ margin: 7px auto 5px !important;
+        padding: 0.5rem 0.8rem; text-transform: uppercase; width: 230px;}<br /><br />
+        #virtual-copy-one {margin-bottom: -23px; margin-top: 25px; padding: 0
+        10px;}<br /><br />
+        #virtual-copy-two {margin-top: -40px;} <br /><br />
+
+        #vs-container {<br />
+        min-height: 527px;<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: flex-end;<br />
+        background: #fff;<br />
+        background-position: center top;<br />
+        background-repeat: no-repeat;<br />
+        background-size: cover;<br />
+        }<br /><br />
+
+        #vs-content {<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: center;<br />
+        line-height: 1.5;<br />
+        }<br /><br />
+
+        #vs-links {<br />
+        text-align: center;<br />
+        }<br />
+
+        .virtual-cta {<br />
+        display: inline-block;<br />
+        }<br />
+
+        }<br /><br />
+
+        @media screen and (min-width: 658px) {<br />
+
+        .virtual-heading {text-transform: uppercase; font-weight: 500
+        !important; font-size: 1.5rem !important; letter-spacing: 3px; color:
+        #000; text-align: center;}<br />
+        .virtual-subtext {font-weight: 500; font-size: 1.1rem !important; color:
+        #000; margin: -0.3rem auto -2.5rem !important; line-height: 1;
+        text-align: center; line-height: 2; text-wrap: balance;}<br />
+        .virtual-cta {font-size: 0.75rem !important; color: #fff !important;
+        background-color: #2d2d2d !important; margin: 0 auto 20px !important;
+        border: 2px solid #2d2d2d; /*border-radius: 32px;*/ cursor: pointer;
+        text-transform: uppercase; width: 230px; padding: 0.5rem;}<br />
+        #virtual-copy-one {margin-bottom: -5px;}<br />
+        #virtual-copy-two {margin-top: -70px; margin-bottom: 25px;}<br />
+
+        #vs-container {<br />
+        display: flex;<br />
+        flex-direction: column;<br />
+        justify-content: center;<br />
+        align-items: flex-start;<br />
+        background-position: center top;<br />
+        background-repeat: no-repeat;<br />
+        background-size: cover;<br />
+        position: relative;<br />
+        }<br /><br />
+
+        #vs-header-image-wrapper {<br />
+        width: 100%;<br />
+        }<br /><br />
+
+        #vs-content {<br />
+        width: 45%;<br />
+        text-align: center;<br />
+        display: flex;<br />
+        align-items: center;<br />
+        flex-direction: column;<br />
+        position: absolute;<br />
+        top: 50%;<br />
+        left: 28%;<br />
+        transform: translate(-50%, -50%);<br />
+        }<br /><br />
+
+        #vs-title br {<br />
+        display: none;<br />
+        }<br /><br />
+
+        .virtual-cta {<br />
+        display: inline-block;<br />
+        }<br />
+        }
+      </div>
+
+      <div
+        class="project-case-three project-description project-portfolio card"
+        id="case-three-code"
+      >
+        <h3 class="project-portfolio-title mt-2">HTML</h3>
+        &lt;a href="/collectibles/kentucky-derby" class="kd-landing-collab-main"
+        title="Radley X Kentucky Derby" style="background-position: center
+        bottom; background-repeat: no-repeat; background-size: cover; "&gt;<br />
+        &lt;div id="kd-landing-collab-main-container"
+        style="background-position: 30% top; background-repeat: no-repeat;
+        background-size: cover; display: flex; flex-wrap: nowrap;
+        flex-direction: column; color: #fff;text-align: center;
+        background-color: #cdc6c0;"&gt;<br /><br />
+
+        &lt;div id="kd-landing-collab-img-wrapper" style="display: flex;
+        flex-direction: column; align-items: center; flex-wrap: wrap;
+        align-items: center;"&gt;<br />
+        &lt;img class="kd-landing-desktop-img-logo"
+        src="/content/dam/radleyandcoltd/ecommerce/kentucky-derby/landing-page/Radley_KD_SVG.svg"&gt;<br />
+
+        &lt;/div&gt;<br />
+        &lt;div id="kd-landing-collab-main-text" style="display: flex;
+        flex-wrap: wrap; flex-direction: column; align-items: center;"&gt;
+        &lt;!--right container --&gt;<br /><br />
+        &lt;div style="display: flex;flex-direction: column;align-items:
+        center;"&gt;<br />
+        &lt;h2 class="homepage-heading"
+        id="kd-landing-collab-main-title"&gt;FROM LONDON TO
+        LOUISVILLE&lt;/h2&gt;<br />
+        &lt;div style="display: flex;justify-content: center;/* padding-bottom:
+        1rem; */"&gt;<br />
+        &lt;p class="homepage-subtext"
+        id="kd-landing-collab-main-secondary-headline" style="line-height: 1.5;
+        text-wrap: balance;"&gt;Our new collection designed for the 150th
+        Kentucky Derby&lt;/p&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div id="kd-landing-collab-main-cta-section" style="display: flex;
+        justify-content: center; width: 100%;"&gt;&lt;p class="homepage-cta"
+        style="text-align: center; font-size: 12px; padding: .5rem;"&gt;SHOP
+        NOW&lt;/p&gt;&lt;/div&gt; <br />
+        &lt;/div&gt;<br />
+
+        &lt;/div&gt;<br />
+        &lt;/a&gt;<br /><br /><br />
+
+        <h3 class="project-portfolio-title">CSS</h3>
+
+        @media screen and (max-width: 657px) {<br />
+        #kd-landing-collab-main {}<br />
+        #kd-landing-collab-main-container {background-image:
+        url('/content/dam/radleyandcoltd/ecommerce/kentucky-derby/landing-page/KD_Radley%20Live_Maintile_Mobile%20%20nologofff.jpg')
+        !important;min-height: 760px; justify-content: flex-end; align-items:
+        flex-end; position: relative;}<br />
+        #kd-landing-collab-main-text {width: 100%;}<br />
+
+        #kd-landing-collab-main-copy {font-size: 1.3rem !important; font-weight:
+        400 !important; margin: 0.5rem auto 0.2rem; line-height: 1.2
+        !important;}<br />
+        #kd-landing-collab-main-secondary-headline {text-wrap: pretty;}<br />
+        #kd-landing-collab-main-cta-section {margin: 7px auto;}<br />
+        #kd-landing-collab-main-cta {}<br />
+        #kd-landing-collab-main-terms {font-size: 12px; margin: 5px auto 5px;
+        padding: 0 9px; position: relative; top: 135px;}<br />
+        #kd-landing-collab-img-wrapper {position: relative; transform:
+        translate(0, -307%); margin: 0 auto;}<br />
+        .kd-landing-desktop-img-logo {height: 120px;}<br />
+
+        #kd-intro-copy, #kd-blog-cta {text-align: center; text-wrap:
+        balance;}<br />
+        #kd-intro-two, #kd-blog-cta {margin: 1.8rem auto !important;}<br />
+        #kd-intro-one {margin: -1rem auto 1.8rem !important;}<br />
+        }<br /><br />
+        @media screen and (min-width: 658px) {<br />
+        #kd-landing-collab-main {}<br />
+        #kd-landing-collab-main-container {background-image:
+        url('/content/dam/radleyandcoltd/ecommerce/kentucky-derby/landing-page/KD_MAIN%20TILE%20DESKTOP_%20%20no%20copy.jpg')
+        !important;min-height: 530px;justify-content: center;align-items:
+        flex-start;} #kd-landing-collab-main-text {width: 50%; }<br />
+        #kd-landing-collab-main-title {}<br />
+        #kd-landing-collab-main-copy {margin: -0.3rem auto 1.5rem !important;
+        line-height: 1.4 !important; font-weight: 400 !important;} <br />
+
+        #kd-landing-collab-main-cta-section {}<br />
+        #kd-landing-collab-main-cta {}<br />
+        #kd-landing-collab-main-terms {font-size: 12px; margin: 75px 0 10px;
+        width: 50%; padding: 0 5px;}<br />
+        #kd-landing-collab-img-wrapper {width: 50%;}<br />
+
+        .kd-landing-desktop-img-logo {height: 154px;}<br />
+        #kd-intro-copy, #kd-blog-cta {text-align: center; text-wrap:
+        balance;}<br />
+        #kd-intro-one, #kd-intro-two, #kd-blog-cta {margin: 2rem auto
+        !important;}<br />
+        }<br /><br />
+        @media screen and (min-width: 1024px) {<br />
+        #kd-landing-collab-main {}<br />
+        #kd-landing-collab-main-container {}<br />
+        #kd-landing-collab-main-text {}<br />
+
+        #kd-landing-collab-main-cta-section {}<br />
+        #kd-landing-collab-main-cta {}<br />
+        }
+      </div>
+
+      <div
+        class="project-case-four project-description project-portfolio card"
+        id="case-four-code"
+      >
+        <h3 class="project-portfolio-title mt-2">HTML</h3>
+
+        &lt;button class="theme-button"&gt;<br />
+        Change Theme &lt;/button&gt;<br />
+        &lt;div class="container"&gt;<br />
+        &lt;h1&gt;Roller Skating&lt;/h1&gt;<br />
+        &lt;h2&gt;🛼 It's not just a hobby 🛼&lt;/h2&gt;<br />
+        &lt;a href="https://en.wikipedia.org/wiki/Roller_skating"
+        target="_blank"&gt;<br />
+        &lt;img src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/968/original/rollerskates.jpg?1695458536"
+        alt="woman roller skating" class="rollerskating-intro-image"&gt;
+        &lt;/a&gt;<br /><br />
+
+        &lt;div class="image-grid"&gt;<br />
+        &lt;img src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/112/original/group_inline_skates.jpg?1695565924"
+        alt="group of people roller skating"&gt;<br />
+        &lt;img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/111/original/blue_skates.jpg?1695565918"
+        alt="close up of blue roller skates"&gt;<br />
+
+        &lt;img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/114/original/rollerskatinglead.jpg?1695566204"
+        alt="woman putting on her roller skates"&gt;<br />
+        &lt;img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/953/original/roller_rink.jpg?1695419915"
+        alt="people at a roller rink"&gt;<br />
+        &lt;/div&gt;<br /><br />
+
+        &lt;p&gt;<br />
+        Roller skating is the act of travelling on surfaces with roller skates.
+        It is a recreational activity, a sport, and a form of transportation.
+        Roller rinks and skate parks are built for roller skating, though it
+        also takes place on streets, sidewalks, and bike paths.<br />
+        &lt;br&gt;<br />
+        &lt;/p&gt;<br />
+        &lt;p&gt;<br />
+        &lt;a href="https://en.wikipedia.org/wiki/Roller_skating"
+        target="_blank"&gt; &lt;strong&gt; Read more on Wikipedia
+        &lt;/strong&gt;<br />
+        &lt;/a&gt;<br />
+        &lt;/p&gt;<br />
+
+        &lt;button class="skate-button"&gt;<br />
+        Learn to Skate &lt;/button&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;footer&gt;Coded by Priscilla&lt;/footer&gt;<br />
+
+        <h3 class="project-portfolio-title">JAVASCRIPT</h3>
+        function changeTheme() {<br />
+        let body =<br />
+        document.querySelector("body");<br />
+
+        if (<br />
+        body.classList.contains("dark")<br />
+        ) {<br />
+        body.classList.remove("dark");<br />
+        } else {<br />
+        body.classList.add("dark");<br />
+        }<br />
+        }<br /><br />
+
+        let themeButton =<br />
+        document.querySelector(<br />
+        ".theme-button"<br />
+        );<br />
+        themeButton.addEventListener(<br />
+        "click",<br />
+        changeTheme<br />
+        );<br />
+
+        function learnToSkate() {<br />
+        let age = prompt("How old are you?");<br />
+        if (age &lt; 18) {<br />
+        alert(<br />
+        "Unfortunately, you won't be able to learn to skate with us 🥺"<br />
+        );<br />
+        } else {<br />
+        let name = prompt(<br />
+        "Tell us your name?"<br />
+        );<br />
+
+        let email = prompt(<br />
+        "What is your email address?"<br />
+        );<br />
+
+        alert(<br />
+        "Hi " +<br />
+        name +<br />
+        "! Thank you for your interest. We will get in touch with you soon
+        😊"<br />
+        );<br />
+        }<br />
+        }<br />
+
+        let skateButton =<br />
+        document.querySelector(<br />
+        ".skate-button"<br />
+        );<br />
+        skateButton.addEventListener(<br />
+        "click",<br />
+        learnToSkate<br />
+        );<br />
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div>
+        <h3>Work Enquiry</h3>
+        <p>Let's work together</p>
+      </div>
+      <div>
+        <a href="mailto:uslinldn@gmail.com" class="btn btn-hero-branding"
+          >Get In Touch</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-socials d-flex mt-3 mb-4">
+        <a
+          href="https://www.linkedin.com/in/priscilla-n-aa472a142/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/lilacilla" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:uslinldn@gmail.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+      <p class="sign-off text-center opacity-75">
+        This project was coded by <strong>Priscilla</strong> and open sourced on
+        <a
+          href="https://github.com/lilacilla/personal-portfolio"
+          target="_blank"
+          title="Github project"
+          ><strong>Github</strong></a
+        >
+      </p>
+    </footer>
+
+    <script src="javascript/portfolio.js"></script>
   </body>
 </html>

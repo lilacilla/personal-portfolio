@@ -28,6 +28,31 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center">
+        <a href="/">
+          <img src="images/name-logo.jpg" class="logo d-md-block" alt="Logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+
+          <li class="active">
+            <a href="/about.html" title="About Page">About</a>
+          </li>
+
+          <li>
+            <a href="/portfolio.html" title="Portfolio">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="/contact.html" title="Contact Priscilla">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="about">
       <div class="about-hero-container row">
         <div class="about-header-content col-6">
@@ -40,7 +65,9 @@
             embarked on an exciting transition into the realm of web
             development.
           </p>
-          <a href="" class="btn btn-hero-branding mt-2">View My Portfolio</a>
+          <a href="/portfolio.html" class="btn btn-grid mt-0"
+            >View My Portfolio</a
+          >
         </div>
         <div class="about-image col-6">
           <img src="images/Profile.jpg" alt="" class="profile-img img-fluid" />
@@ -67,16 +94,19 @@
       <div class="about-skills-section container mt-5">
         <div class="text-center mb-3">Skills</div>
         <div class="tag-list-container text-center">
-          <p class="tag">HTML</p>
-          <p class="tag">CSS</p>
-          <p class="tag">Javascript</p>
-          <p class="tag">React</p>
-          <p class="tag">UX</p>
+          <p class="tag"><i class="fa-brands fa-html5"></i> HTML</p>
+          <p class="tag"><i class="fa-brands fa-css3-alt"></i> CSS</p>
+          <p class="tag"><i class="fa-brands fa-js"></i> Javascript</p>
+          <p class="tag"><i class="fa-brands fa-react"></i>React</p>
+          <p class="tag"><i class="fa-solid fa-palette"></i> UX</p>
           <br />
-          <p class="tag">Figma</p>
-          <p class="tag">API</p>
-          <p class="tag">Wireframes</p>
-          <p class="tag">Responsive Web Design</p>
+          <p class="tag"><i class="fa-brands fa-figma"></i> Figma</p>
+          <p class="tag"><i class="fa-solid fa-code-compare"></i> API</p>
+          <p class="tag"><i class="fa-solid fa-pen"></i> Wireframes</p>
+          <p class="tag">
+            <i class="fa-solid fa-mobile-screen-button"></i> Responsive Web
+            Design
+          </p>
         </div>
       </div>
 
@@ -86,9 +116,38 @@
           <p>Let's work together</p>
         </div>
         <div>
-          <a href="#" class="btn btn-hero-branding">Get In Touch</a>
+          <a href="mailto:uslinldn@gmail.com" class="btn btn-hero-branding"
+            >Get In Touch</a
+          >
         </div>
       </div>
+
+      <footer>
+        <div class="footer-socials d-flex mt-3 mb-4">
+          <a
+            href="https://www.linkedin.com/in/priscilla-n-aa472a142/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/lilacilla" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:uslinldn@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </div>
+        <p class="sign-off text-center opacity-75">
+          This project was coded by <strong>Priscilla</strong> and open sourced
+          on
+          <a
+            href="https://github.com/lilacilla/personal-portfolio"
+            target="_blank"
+            title="Github project"
+            ><strong>Github</strong></a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
