@@ -202,6 +202,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .about-header-content h1 {
@@ -686,10 +687,6 @@ nav li.active a {
   .project-promo-tags-five,
   .project-promo-tags-six {
     font-size: 12px;
-  }
-
-  .about-hero-container {
-    margin: 0;
   }
 
   .about-header-content {
