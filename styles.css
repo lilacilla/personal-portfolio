@@ -569,6 +569,7 @@ nav li.active a {
 
 .sign-off {
   font-size: 12px;
+  padding: 0 5px;
 }
 
 @media screen and (min-width: 658px) {
@@ -685,6 +686,10 @@ nav li.active a {
   .project-promo-tags-five,
   .project-promo-tags-six {
     font-size: 12px;
+  }
+
+  .about-hero-container {
+    margin: 0;
   }
 
   .about-header-content {
