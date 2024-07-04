@@ -550,7 +550,12 @@ nav li.active a {
 }
 
 .project-case-four.show {
-  top: 130% !important;
+  top: 380% !important;
+}
+
+.course-project-cta {
+  display: flex;
+  justify-content: center;
 }
 
 .sign-off,
@@ -689,6 +694,10 @@ nav li.active a {
     font-size: 12px;
   }
 
+  .course-project-cta {
+    margin-bottom: 8px;
+  }
+
   .about-header-content {
     flex: none;
     width: 100%;
@@ -741,6 +750,6 @@ nav li.active a {
   }
 
   .project-case-four.show {
-    top: 154% !important;
+    top: 1300% !important;
   }
 }
