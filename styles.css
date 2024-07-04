@@ -332,6 +332,12 @@ ul {
   text-align: center;
   font-size: 12px;
 }
+
+.note-copy {
+  font-weight: 400;
+  font-style: italic;
+}
+
 .portfolio-tags {
   margin: 0 auto 1rem;
   padding: 0;
